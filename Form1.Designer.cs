@@ -49,6 +49,7 @@
             daynightlabel.Size = new Size(97, 21);
             daynightlabel.TabIndex = 0;
             daynightlabel.Text = "Valheim Day";
+            daynightlabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // ResetButton
             // 
@@ -94,6 +95,7 @@
             minslabel.Size = new Size(28, 21);
             minslabel.TabIndex = 5;
             minslabel.Text = "30";
+            minslabel.TextAlign = ContentAlignment.TopRight;
             // 
             // secslabel
             // 

@@ -10,7 +10,7 @@ namespace Countdown
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            while (timeleft > 0)
+            if (timeleft > 0)
             {
                 timeleft = timeleft - 1;
                 // timerlabel.Text = timeleft + " seconds";
@@ -18,11 +18,15 @@ namespace Countdown
                 minslabel.Text = minsleft.ToString();
                 int secondsleft = timeleft % 60;
                 secslabel.Text = secondsleft.ToString();
+                if (timeleft == 539)
+                {
+                    daynightlabel.Text = "     Night   ";
+                }
             }
-           
+            else
             {
                 timeleft = 1800;
-                timer.Start();
+                daynightlabel.Text = "      Day    ";
             }
         }
 
