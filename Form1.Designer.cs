@@ -30,7 +30,6 @@
         {
             components = new System.ComponentModel.Container();
             daynightlabel = new Label();
-            timerlabel = new Label();
             ResetButton = new Button();
             StopButton = new Button();
             StartButton = new Button();
@@ -50,15 +49,6 @@
             daynightlabel.Size = new Size(97, 21);
             daynightlabel.TabIndex = 0;
             daynightlabel.Text = "Valheim Day";
-            // 
-            // timerlabel
-            // 
-            timerlabel.AutoSize = true;
-            timerlabel.Location = new Point(5, 62);
-            timerlabel.Name = "timerlabel";
-            timerlabel.Size = new Size(77, 15);
-            timerlabel.TabIndex = 1;
-            timerlabel.Text = "1260 seconds";
             // 
             // ResetButton
             // 
@@ -137,7 +127,6 @@
             Controls.Add(StartButton);
             Controls.Add(StopButton);
             Controls.Add(ResetButton);
-            Controls.Add(timerlabel);
             Controls.Add(daynightlabel);
             Name = "CountDownTimer";
             Text = "Valheim Timer";
@@ -149,7 +138,6 @@
         #endregion
 
         private Label daynightlabel;
-        private Label timerlabel;
         private Button ResetButton;
         private Button StopButton;
         private Button StartButton;

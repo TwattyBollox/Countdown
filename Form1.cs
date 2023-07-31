@@ -13,7 +13,7 @@ namespace Countdown
             if (timeleft > 0)
             {
                 timeleft = timeleft - 1;
-                timerlabel.Text = timeleft + " seconds";
+                // timerlabel.Text = timeleft + " seconds";
                 int minsleft = timeleft / 60;
                 minslabel.Text = minsleft.ToString();
                 int secondsleft = timeleft % 60;
@@ -35,7 +35,7 @@ namespace Countdown
         {
             timer.Stop();
             timeleft = 1800;
-            timerlabel.Text = timeleft + " seconds";
+            // timerlabel.Text = timeleft + " seconds";
             timer.Start();
         }
 
