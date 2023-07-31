@@ -6,7 +6,7 @@ namespace Countdown
         {
             InitializeComponent();
         }
-        int timeleft = 1260;
+        int timeleft = 1800;
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -21,7 +21,7 @@ namespace Countdown
             }
             else
             {
-                timeleft = 1260;
+                timeleft = 1800;
                 timer.Start();
             }
         }
@@ -34,7 +34,7 @@ namespace Countdown
         private void ResetButton_Click(object sender, EventArgs e)
         {
             timer.Stop();
-            timeleft = 1260;
+            timeleft = 1800;
             timerlabel.Text = timeleft + " seconds";
             timer.Start();
         }
