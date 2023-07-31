@@ -44,7 +44,7 @@
             // 
             daynightlabel.AutoSize = true;
             daynightlabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            daynightlabel.Location = new Point(0, 0);
+            daynightlabel.Location = new Point(12, 9);
             daynightlabel.Name = "daynightlabel";
             daynightlabel.Size = new Size(97, 21);
             daynightlabel.TabIndex = 0;
@@ -52,7 +52,7 @@
             // 
             // ResetButton
             // 
-            ResetButton.Location = new Point(132, 22);
+            ResetButton.Location = new Point(133, 25);
             ResetButton.Name = "ResetButton";
             ResetButton.Size = new Size(46, 23);
             ResetButton.TabIndex = 2;
@@ -62,7 +62,7 @@
             // 
             // StopButton
             // 
-            StopButton.Location = new Point(132, 43);
+            StopButton.Location = new Point(133, 46);
             StopButton.Name = "StopButton";
             StopButton.Size = new Size(46, 23);
             StopButton.TabIndex = 3;
@@ -72,7 +72,7 @@
             // 
             // StartButton
             // 
-            StartButton.Location = new Point(132, 1);
+            StartButton.Location = new Point(133, 4);
             StartButton.Name = "StartButton";
             StartButton.Size = new Size(46, 23);
             StartButton.TabIndex = 4;
@@ -89,7 +89,7 @@
             // 
             minslabel.AutoSize = true;
             minslabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            minslabel.Location = new Point(17, 31);
+            minslabel.Location = new Point(29, 40);
             minslabel.Name = "minslabel";
             minslabel.Size = new Size(28, 21);
             minslabel.TabIndex = 5;
@@ -99,7 +99,7 @@
             // 
             secslabel.AutoSize = true;
             secslabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            secslabel.Location = new Point(44, 31);
+            secslabel.Location = new Point(56, 40);
             secslabel.Name = "secslabel";
             secslabel.Size = new Size(28, 21);
             secslabel.TabIndex = 6;
@@ -110,7 +110,7 @@
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
             label2.ForeColor = Color.Black;
-            label2.Location = new Point(39, 34);
+            label2.Location = new Point(51, 43);
             label2.Name = "label2";
             label2.Size = new Size(10, 15);
             label2.TabIndex = 7;
@@ -120,7 +120,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(210, 74);
+            ClientSize = new Size(185, 74);
             Controls.Add(label2);
             Controls.Add(secslabel);
             Controls.Add(minslabel);
@@ -128,6 +128,7 @@
             Controls.Add(StopButton);
             Controls.Add(ResetButton);
             Controls.Add(daynightlabel);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "CountDownTimer";
             Text = "Valheim Timer";
             TopMost = true;
