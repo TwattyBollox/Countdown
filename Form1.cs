@@ -6,7 +6,7 @@ namespace Countdown
         {
             InitializeComponent();
         }
-        int timeleft = 550;
+        int timeleft = 1800;
 
         private void timer1_Tick(object sender, EventArgs e)
         {
