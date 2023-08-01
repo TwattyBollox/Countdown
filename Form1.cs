@@ -6,7 +6,7 @@ namespace Countdown
         {
             InitializeComponent();
         }
-        int timeleft = 1800;
+        int timeleft = 550;
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -40,6 +40,7 @@ namespace Countdown
             timer.Stop();
             timeleft = 1800;
             // timerlabel.Text = timeleft + " seconds";
+            daynightlabel.Text = "      Day    ";
             timer.Start();
         }
 
