@@ -15,9 +15,9 @@ namespace Countdown
                 timeleft = timeleft - 1;
                 // timerlabel.Text = timeleft + " seconds";
                 int minsleft = timeleft / 60;
-                minslabel.Text = minsleft.ToString();
+                minslabel.Text = minsleft.ToString("D2");
                 int secondsleft = timeleft % 60;
-                secslabel.Text = secondsleft.ToString();
+                secslabel.Text = secondsleft.ToString("D2");
                 if (timeleft == 539)
                 {
                     daynightlabel.Text = "     Night   ";
